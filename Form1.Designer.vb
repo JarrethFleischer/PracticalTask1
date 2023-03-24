@@ -57,13 +57,13 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.tbWorkHours = New System.Windows.Forms.TextBox()
-        Me.tbRate = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.tbTotal = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.tbTotal = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.tbRate = New System.Windows.Forms.TextBox()
+        Me.tbWorkHours = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -349,21 +349,27 @@ Partial Class Form1
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.IndianRed
+        Me.Button2.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Location = New System.Drawing.Point(18, 189)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 29)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Reset"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.IndianRed
+        Me.Button1.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(18, 154)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 29)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Add Picture"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -395,39 +401,24 @@ Partial Class Form1
         Me.Panel4.Size = New System.Drawing.Size(858, 142)
         Me.Panel4.TabIndex = 3
         '
-        'Label11
+        'btnCalculate
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Trebuchet MS", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(9, 21)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(85, 18)
-        Me.Label11.TabIndex = 8
-        Me.Label11.Text = "Work Hours:"
+        Me.btnCalculate.BackColor = System.Drawing.Color.IndianRed
+        Me.btnCalculate.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnCalculate.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnCalculate.Location = New System.Drawing.Point(159, 89)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(90, 38)
+        Me.btnCalculate.TabIndex = 14
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = False
         '
-        'Label12
+        'tbTotal
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Trebuchet MS", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.Location = New System.Drawing.Point(19, 61)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(75, 18)
-        Me.Label12.TabIndex = 9
-        Me.Label12.Text = "Rate/Hour:"
-        '
-        'tbWorkHours
-        '
-        Me.tbWorkHours.Location = New System.Drawing.Point(100, 16)
-        Me.tbWorkHours.Name = "tbWorkHours"
-        Me.tbWorkHours.Size = New System.Drawing.Size(227, 27)
-        Me.tbWorkHours.TabIndex = 10
-        '
-        'tbRate
-        '
-        Me.tbRate.Location = New System.Drawing.Point(100, 56)
-        Me.tbRate.Name = "tbRate"
-        Me.tbRate.Size = New System.Drawing.Size(227, 27)
-        Me.tbRate.TabIndex = 11
+        Me.tbTotal.Location = New System.Drawing.Point(438, 16)
+        Me.tbTotal.Name = "tbTotal"
+        Me.tbTotal.Size = New System.Drawing.Size(227, 27)
+        Me.tbTotal.TabIndex = 13
         '
         'Label13
         '
@@ -439,21 +430,39 @@ Partial Class Form1
         Me.Label13.TabIndex = 12
         Me.Label13.Text = "Total:"
         '
-        'tbTotal
+        'tbRate
         '
-        Me.tbTotal.Location = New System.Drawing.Point(438, 16)
-        Me.tbTotal.Name = "tbTotal"
-        Me.tbTotal.Size = New System.Drawing.Size(227, 27)
-        Me.tbTotal.TabIndex = 13
+        Me.tbRate.Location = New System.Drawing.Point(100, 56)
+        Me.tbRate.Name = "tbRate"
+        Me.tbRate.Size = New System.Drawing.Size(227, 27)
+        Me.tbRate.TabIndex = 11
         '
-        'btnCalculate
+        'tbWorkHours
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(156, 100)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(90, 27)
-        Me.btnCalculate.TabIndex = 14
-        Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.tbWorkHours.Location = New System.Drawing.Point(100, 16)
+        Me.tbWorkHours.Name = "tbWorkHours"
+        Me.tbWorkHours.Size = New System.Drawing.Size(227, 27)
+        Me.tbWorkHours.TabIndex = 10
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Trebuchet MS", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.Location = New System.Drawing.Point(19, 61)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(75, 18)
+        Me.Label12.TabIndex = 9
+        Me.Label12.Text = "Rate/Hour:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Trebuchet MS", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(9, 21)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(85, 18)
+        Me.Label11.TabIndex = 8
+        Me.Label11.Text = "Work Hours:"
         '
         'Form1
         '
