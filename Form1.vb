@@ -1,7 +1,8 @@
 ﻿Imports System.Drawing.Drawing2D
 Imports System.IO
-
 Public Class Form1
+
+    Dim totalprice As Double
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Close()
     End Sub
@@ -62,4 +63,25 @@ Public Class Form1
         Return resizedImage
     End Function
 
+    Private Sub tbWorkHours_TextChanged(sender As Object, e As EventArgs) Handles tbWorkHours.TextChanged
+
+    End Sub
+
+    Private Sub tbRate_TextChanged(sender As Object, e As EventArgs) Handles tbRate.TextChanged
+
+    End Sub
+
+    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles tbTotal.TextChanged
+
+    End Sub
+
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+
+        Dim WorkHours As Double = Val(tbWorkHours.Text)
+        Dim Rate As Double = Val(tbRate.Text)
+
+        totalprice = WorkHours * Rate
+        tbTotal.Text = totalprice.ToString("c2")
+
+    End Sub
 End Class
